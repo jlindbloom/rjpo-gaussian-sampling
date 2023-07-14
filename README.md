@@ -1,5 +1,7 @@
 # rjpo-gaussian-sampling
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This repository provides a Python implementation of the reversible jump perturbation optimization (RJPO) method presented in [[1]](#1) for sampling high-dimensional Gaussians. This method avoids matrix factorizations and requires only matrix-vector products related to the precision matrix. The samples generated are inexact but valid in the MCMC sense.
 
 In this implementation, we assume that our goal is to sample from the Gaussian $\mathcal{N}(\mu, Q^{-1})$, with $Q \in \mathbb{R}^n$ a SPD precision matrix. We assume the precision matrix is of the form
